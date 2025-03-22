@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,66 +5,145 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #0d0f1b;
-    color: #fff;
-    text-align: center;
+:root{
+    --color-hover:#00c4b4;
+    --color-hover-button: #00a89a;
+    --background-color-body:  #1a2a44;
+    --background-color-header: #1a2a44af;
 }
 
-/* Cabeçalho */
+body {
+    background-color: var(--background-color-body); /* Fallback caso a imagem não carregue */
+    background-image: url('https://cdn.discordapp.com/attachments/1352440065854541846/1352780359095287898/MorningStar_20250321_200555_0000.png?ex=67df4263&is=67ddf0e3&hm=b3e509db742bb3eeabe115569b475859f308f4689618554c10de0c7db45ef127&');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--background-color-header)
 }
 
-nav ul {
-    display: flex;
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
+header nav ul li a {
     color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover{
+    color: var(--color-hover);
+}
+
+/* Estilizando o ícone de menu */
+.menu-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.menu-icon i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu-icon:hover {
+    border-color: var(--color-hover); /* Altera a cor da borda ao passar o mouse */
+}
+
+.menu-icon:hover i {
+    color: var(--color-hover); /* Altera a cor do ícone ao passar o mouse */
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: calc(100vh - 140px); /* Mantém a altura */
+    padding: 50px 30px; /* 50px no topo e na base, 30px à esquerda e à direita */
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 72px; /* Aumentado de 60px para 72px */
+    line-height: 1.2;
+    margin-bottom: 25px; /* Aumentado de 20px para 25px */
+}
+
+.content p {
+    font-size: 26px; /* Aumentado de 22px para 26px */
+    margin-bottom: 35px; /* Aumentado de 30px para 35px */
+}
+
+.content button {
+    background-color: #00c4b4;
+    color: #fff;
+    border: none;
+    padding: 20px 40px; /* Aumentado de 18px 36px para 20px 40px */
+    font-size: 20px; /* Aumentado de 18px para 20px */
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 50px; /* Aumentado de 40px para 50px */
+}
+
+.content button:hover {
+    background-color: var(--color-hover-button);
+}
+
+.contact p {
+    font-size: 18px; /* Aumentado de 16px para 18px */
+    margin-bottom: 8px; /* Aumentado de 5px para 8px */
+}
+
+.contact p:first-child {
+    font-weight: bold;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px; /* Aumentado de 20px para 25px */
+}
+
+.social-icons a{
     text-decoration: none;
 }
 
-.hero {
-    margin-top: 50px;
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px; /* Aumentado de 5px para 8px */
 }
 
-h2 {
-    font-size: 32px;
+.social-icon i {
+    font-size: 32px; /* Aumentado de 28px para 32px */
+    color: #fff; /* Cor do ícone */
 }
 
-p {
-    margin: 10px 0;
-}
-
-
-button {
-    background-color: #00e0ff;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #008fb3;
+.social-icon:hover {
+    border-color: var(--color-hover); /* Altera a cor da borda ao passar o mouse */
 }
 
 
-/* Rodapé */
-footer {
-    margin-top: 50px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-}

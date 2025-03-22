@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MorningStar</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Mantendo apenas o link do FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
     <header>
-        <h1 class="logo">MorningStar</h1>
+        <div class="logo">MorningStar</div>
         <nav>
             <ul>
                 <li><a href="#">Central de Ajuda</a></li>
@@ -17,32 +18,32 @@
                 <li><a href="#">Comercial</a></li>
                 <li><a href="#">Pessoal</a></li>
                 <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="#" class="login">Login</a></li>
                 <li><a href="#">Sobre</a></li>
+                <li><a href="#" class="menu-icon"><i class="fa-solid fa-bars fa-lg"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="overlay"></div>
-            <h2>Conecte-se ao futuro do suporte técnico</h2>
+        <div class="content">
+            <h1>Conecte-se ao futuro do suporte técnico</h1>
             <p>Serviço rápido, confiável e eficiente para sua empresa.</p>
-            <button id="cadastroBtn">Cadastre-se agora</button>
-        </section>
-
-        <div class="logo-animada">
-            <img src="logo.png" alt="MorningStar Logo">
+            <button>Cadastre-se agora</button>
+            <div class="contact">
+                <p><strong>Fale conosco:</strong></p>
+                <p>(41) 3456-7890</p>
+                <p>Rua Qualquer, 123, Curitiba-PR</p>
+                <p>morningstar@gmail.com.br</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fa-brands fa-linkedin fa-sm"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter fa-sm"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-instagram fa-sm"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-facebook fa-sm"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-github fa-sm"></i></a>
+            </div>
         </div>
-
-        <footer>
-            <p>Fale conosco:</p>
-            <p>(41) 3456-7890</p>
-            <p>Rua Qualquer, 123, Curitiba-PR</p>
-            <p>morningstar@gmail.com.br</p>
-        </footer>
     </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
