@@ -5,10 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
-:root{
-    --color-hover:#00c4b4;
+:root {
+    --color-hover: #00c4b4;
     --color-hover-button: #00a89a;
-    --background-color-body:  #1a2a44;
+    --background-color-body: #1a2a44;
     --background-color-header: #1a2a44af;
 }
 
@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: var(--background-color-header)
+    background-color: var(--background-color-header);
 }
 
 header .logo {
@@ -46,7 +46,7 @@ header nav ul li a {
     font-size: 16px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     color: var(--color-hover);
 }
 
@@ -126,7 +126,7 @@ main {
     margin-top: 25px; /* Aumentado de 20px para 25px */
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
 }
 
@@ -146,4 +146,135 @@ main {
     border-color: var(--color-hover); /* Altera a cor da borda ao passar o mouse */
 }
 
+/* Estilo da página de cadastro */
+.register-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto; /* Centraliza o formulário */
+    text-align: center;
+}
 
+.register-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register-container form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.radio-group label {
+    color: #fff;
+    font-size: 14px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.terms {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.terms a {
+    color: var(--color-hover);
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.register-container button[type="submit"] {
+    background-color: #00c4b4;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.register-container button[type="submit"]:hover {
+    background-color: var(--color-hover-button);
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: var(--color-hover);
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    header nav ul li.menu-icon {
+        display: block;
+    }
+
+    main {
+        padding: 30px 20px;
+        justify-content: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 48px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .content button {
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .social-icon i {
+        font-size: 28px;
+    }
+
+    .register-container {
+        width: 90%;
+    }
+}

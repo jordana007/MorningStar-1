@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - MorningStar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link do FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">MorningStar</div>
+        <nav>
+            <ul>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Comercial</a></li>
+                <li><a href="#">Pessoal</a></li>
+                <li><a href="#">Parceiros</a></li>
+                <li><a href="#" class="login">Login</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#" class="menu-icon"><i class="fa-solid fa-bars fa-lg"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="register-container">
+            <h2>Cadastro</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nome" placeholder="nome e sobrenome" required>
+                <input type="email" name="email" placeholder="e-mail" required>
+                <input type="text" name="cpf" placeholder="CPF" required>
+                <input type="tel" name="telefone" placeholder="número de telefone" required>
+                <input type="password" name="senha" placeholder="senha" required>
+                <input type="password" name="confirmar-senha" placeholder="verificação de senha" required>
+                
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="tipo" value="cliente" required> cliente
+                    </label>
+                    <label>
+                        <input type="radio" name="tipo" value="tecnico"> técnico
+                    </label>
+                </div>
+
+                <p class="terms">
+                    Eu li e concordo com os <a href="#">Termos e Condições</a> e <a href="#">Política de Privacidade</a>.
+                </p>
+
+                <button type="submit">Cadastrar</button>
+
+                <p class="login-link">Já possui uma conta? <a href="index.html">Log in</a></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
